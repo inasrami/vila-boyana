@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+@theme {
+  --color-forest-green: #2E6F40;
+  --color-moss-green:  #556B2F;
+  --color-wood-brown:  #7B583D;
+  --color-warm-cream:  #F3F1EC;
+  --color-soft-neutral: #E6E4E0;
+  --color-charcoal-text: #2B2B2B;
+  --color-warm-beige:  #C8B8A7;
+}
+
 body, html {
     margin: 0;
     padding: 0;
