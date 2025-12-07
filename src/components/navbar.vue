@@ -1,128 +1,128 @@
 <template>
-  <nav class="fixed top-0 left-0 right-0 z-500 transition-all duration-300 max-h-20" :class="navClasses">
-    <div class="px-3 container-custom relative"> <div class="flex items-center justify-between py-3 lg:py-4">
-        
+  <nav class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 max-h-20" :class="navClasses">
+    <div class="px-3 container-custom relative">
+      <div class="flex items-center justify-between py-3 lg:py-4">
+
         <div class="hidden lg:flex items-center justify-start"
-     :class="{ 'opacity-0 pointer-events-none': !navVisible, 'opacity-100': navVisible }">
-  
-  <ul class="flex items-center space-x-7 ml-50">
-    <li 
-      v-for="link in leftLinks" 
-      :key="link.path"
-      class="relative h-full flex items-center" 
-      @mouseenter="handleMouseEnter(link.name)"
-      @mouseleave="handleMouseLeave"
-    >
-      <router-link
-        :to="link.path"
-        class="text-sm font-medium tracking-widest uppercase nav-link py-4   flex items-center gap-1"
-        :class="{ active: route.path === link.path }"
-      >
-        {{ link.name }}
-        <span v-if="link.children" class="text-[10px] opacity-70 transition-transform duration-300" :class="activeDropdown === link.name ? 'rotate-180' : ''">▼</span>
-      </router-link>
+          :class="{ 'opacity-0 pointer-events-none': !navVisible, 'opacity-100': navVisible }">
 
-      <transition
-        enter-active-class="transition ease-out duration-300"
-        enter-from-class="opacity-0 translate-y-2"
-        enter-to-class="opacity-100 translate-y-0"
-        leave-active-class="transition ease-in duration-150"
-        leave-from-class="opacity-100 translate-y-0"
-        leave-to-class="opacity-0 translate-y-2"
-      >
-        <div 
-          v-if="link.children && activeDropdown === link.name"
-          class="absolute top-full left-1/2 -translate-x-1/2 min-w-[200px] pt-2"
-        >
-          <div class="bg-stone-500/70 border-t-2 border-stone-600 shadow-xl rounded-b-sm flex flex-col py-2">
-            <router-link
-              v-for="child in link.children"
-              :key="child.path"
-              :to="child.path"
-              class="px-5 py-3 text-sm text-stone-300 hover:bg-stone-800 hover:text-white transition-colors uppercase tracking-wider text-center"
-            >
-              {{ child.name }}
-            </router-link>
-          </div>
+          <ul class="flex items-center space-x-7 ml-50">
+            <li v-for="link in leftLinks" :key="link.path" class="relative h-full flex items-center"
+              @mouseenter="handleMouseEnter(link.name)" @mouseleave="handleMouseLeave">
+              <router-link :to="link.path"
+                class="text-sm font-medium tracking-widest uppercase nav-link py-4   flex items-center gap-1"
+                :class="{ active: route.path === link.path }">
+                {{ link.name }}
+                <span v-if="link.children" class="text-[10px] opacity-70 transition-transform duration-300"
+                  :class="activeDropdown === link.name ? 'rotate-180' : ''">▼</span>
+              </router-link>
+
+              <transition
+                enter-active-class="transition ease-out duration-300"
+                enter-from-class="opacity-0 translate-y-2"
+                enter-to-class="opacity-100 translate-y-0"
+                leave-active-class="transition ease-in duration-150"
+                leave-from-class="opacity-100 translate-y-0"
+                leave-to-class="opacity-0 translate-y-2">
+                <div v-if="link.children && activeDropdown === link.name"
+                  class="absolute top-full left-1/2 -translate-x-1/2 min-w-[200px] pt-2">
+                  <div class="bg-stone-500/70 border-t-2 border-stone-600 shadow-xl rounded-b-sm flex flex-col py-2">
+                    <router-link v-for="child in link.children" :key="child.path" :to="child.path"
+                      class="px-5 py-3 text-sm text-stone-300 hover:bg-stone-800 hover:text-white transition-colors uppercase tracking-wider text-center">
+                      {{ child.name }}
+                    </router-link>
+                  </div>
+                </div>
+              </transition>
+
+            </li>
+          </ul>
         </div>
-      </transition>
-
-    </li>
-  </ul>
-</div>
 
         <router-link to="/" class="absolute left-1/2 top-0 transform -translate-x-1/2 z-50 hidden sm:block">
-           <div class="pt-2"> <img
-              src="/src/assets/logo.png"
-              alt="Vila Boyana Logo"
-              class="w-auto transition-all duration-300 max-w-none drop-shadow-md p"
-              :class="[
-                 scrolled ? 'h-24 md:h-28 opacity-100' : 'h-32 md:h-40 opacity-100' 
+          <div class="pt-2"> <img src="/src/assets/logo.png" alt="Vila Boyana Logo"
+              class="w-auto transition-all duration-300 max-w-none drop-shadow-md p" :class="[
+                scrolled ? 'h-24 md:h-28 opacity-100' : 'h-32 md:h-40 opacity-100'
 
-              ]"
-            />
+              ]" />
           </div>
         </router-link>
 
         <router-link to="/" class="sm:hidden relative z-50">
-             <img src="/src/assets/logo.png" alt="Logo" class="h-12 w-auto" />
+          <img src="/src/assets/logo.png" alt="Logo" class="h-12 w-auto" />
         </router-link>
 
 
         <div class="hidden lg:flex items-center justify-end flex-1 space-x-8"
-             :class="{ 'opacity-0 pointer-events-none': !navVisible, 'opacity-100': navVisible }">
-          
+          :class="{ 'opacity-0 pointer-events-none': !navVisible, 'opacity-100': navVisible }">
+
           <ul class="flex items-center space-x-7 mr-20">
             <li v-for="link in rightLinks" :key="link.path">
-              <router-link
-                :to="link.path"
-                class="text-sm font-medium tracking-widest uppercase nav-link"
-                :class="{ active: route.path === link.path }"
-              >
+              <a v-if="link.external" :href="link.path" target="_blank" rel="noopener noreferrer" class="text-sm font-medium tracking-widest uppercase nav-link">
+                {{ link.name }}
+              </a>
+              <router-link v-else :to="link.path" class="text-sm font-medium tracking-widest uppercase nav-link"
+                :class="{ active: route.path === link.path }">
                 {{ link.name }}
               </router-link>
             </li>
           </ul>
 
-          
+
         </div>
 
         <button
+          v-if="!mobileMenuOpen"
           @click="toggleMobileMenu"
-          class="relative z-50 flex items-center justify-center w-10 h-10 p-0 transition-colors duration-300 lg:hidden"
+          class="lg:hidden p-2 z-40 relative transition-colors duration-300"
           :class="{
-            'text-primary': scrolled && !mobileMenuOpen,
-            'text-white': !scrolled || mobileMenuOpen,
+            'text-primary': scrolled,
+            'text-white': !scrolled,
           }"
+          :aria-expanded="mobileMenuOpen"
+          :aria-controls="'mobile-menu'"
+          :aria-label="'Open navigation'"
         >
-          <span class="text-3xl material-symbols-outlined">
-            {{ mobileMenuOpen ? 'close' : 'menu' }}
-          </span>
+          <span class="material-symbols-outlined text-3xl">menu</span>
         </button>
-      </div>
-
-      <div
-        class="fixed inset-0 z-40 flex flex-col items-center justify-center p-4 transition-all duration-500 ease-in-out bg-stone-900/95 backdrop-blur-xl lg:hidden"
-        :class="mobileMenuOpen ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full pointer-events-none'"
-      >
-        <nav class="flex flex-col space-y-6 text-center">
-          <router-link
-            v-for="link in [...leftLinks, ...rightLinks]"
-            :key="link.path"
-            :to="link.path"
-            @click="closeMobileMenu"
-            class="font-serif text-2xl text-white transition-colors hover:text-amber-500"
-          >
-            {{ link.name }}
-          </router-link>
-          
-          <div class="w-12 h-0.5 bg-white/20 mx-auto my-4"></div>
-
-          
-        </nav>
       </div>
     </div>
   </nav>
+
+  <!-- MOBILE MENU - MOVED OUTSIDE NAV -->
+  <transition
+    enter-active-class="transition ease-out duration-500"
+    enter-from-class="opacity-0 translate-x-full"
+    enter-to-class="opacity-100 translate-x-0"
+    leave-active-class="transition ease-in duration-500"
+    leave-from-class="opacity-100 translate-x-0"
+    leave-to-class="opacity-0 translate-x-full"
+  >
+    <div
+      v-if="mobileMenuOpen"
+      class="fixed inset-0 bg-[#1c1917]/90 backdrop-blur-xs z-50 flex flex-col justify-center items-center"
+      id="mobile-menu"
+    >
+      <button
+        @click="toggleMobileMenu"
+        class="absolute top-6 right-6 z-50 text-white transition-colors duration-300"
+        :aria-label="mobileMenuOpen ? 'Close navigation' : 'Open navigation'"
+      >
+        <span class="material-symbols-outlined text-3xl">close</span>
+      </button>
+
+      <nav class="flex flex-col space-y-6 text-center">
+        <template v-for="link in leftLinks.concat(rightLinks)" :key="link.path">
+          <a v-if="link.external" :href="link.path" target="_blank" rel="noopener noreferrer" @click="closeMobileMenu" class="text-white text-2xl font-serif hover:text-accent transition-colors uppercase tracking-widest">
+            {{ link.name }}
+          </a>
+          <router-link v-else :to="link.path" @click="closeMobileMenu" class="text-white text-2xl font-serif hover:text-accent transition-colors uppercase tracking-widest">
+            {{ link.name }}
+          </router-link>
+        </template>
+      </nav>
+    </div>
+  </transition>
 </template>
 
 <script setup>
@@ -136,6 +136,7 @@ const mobileMenuOpen = ref(false)
 const scrolled = ref(false)
 const heroBottom = ref(0)
 const navHeight = ref(80)
+const isMobile = ref(false)
 
 
 const activeDropdown = ref(null)
@@ -147,8 +148,8 @@ const handleMouseLeave = () => { activeDropdown.value = null }
 
 const leftLinks = [
   { name: 'стаи', path: '/' },
-  { 
-    name: 'Хотелът', 
+  {
+    name: 'Хотелът',
     path: '/hotel',
     children: [
       { name: 'За Нас', path: '/about' },
@@ -156,28 +157,27 @@ const leftLinks = [
       { name: 'Транспорт', path: '/transport' }
     ]
   },
-  { name: 'ГАЛЕРИЯ', 
+  {
+    name: 'ГАЛЕРИЯ',
     path: '/spa',
     children: [
       { name: 'СПА & Уелнес', path: '/spa' },
       { name: 'Ресторант', path: '/restaurant' }
     ]
-},
+  },
 ]
 
 const rightLinks = [
   { name: 'СВОБОДНО ВРЕМЕ', path: '/events' },
   { name: 'АКТУАЛНО', path: '/gallery' },
-  { name: 'РЕЗЕРВАЦИИ', path: '/contact' },
+  { name: 'РЕЗЕРВАЦИИ', path: 'https://www.booking.com/hotel/bg/hotel-villa-boyana.en-gb.html?aid=311984&label=dy-d3-4ndud-dd-d-d-ddeg-dd3-4nd1-2ddeg-abN0XXNXm3uc7DvZFGFLvAS390342540437%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-329068441615%3Alp9219127%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YTQUGSsRwx9_3qo3uPTHyoo&sid=f55ae84bbef1833596d97570f568737f&dest_id=-838489&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1765118413&srpvid=c826672414600787&type=total&ucfs=1&', external: true },
 ]
 
 const navClasses = computed(() => {
   return {
-
-    'bg-stone-400/30 backdrop-blur-lg shadow-md h-20': scrolled.value, 
-    'bg-transparent h-24': !scrolled.value,
-    'text-white': !scrolled.value,
-    'text-white': scrolled.value,
+    'bg-stone-400/30 backdrop-blur-lg shadow-md h-20': scrolled.value || isMobile.value,
+    'bg-transparent h-24': !scrolled.value && !isMobile.value,
+    'text-white': true,
   }
 })
 
@@ -186,12 +186,16 @@ function toggleMobileMenu() {
   document.body.style.overflow = mobileMenuOpen.value ? 'hidden' : ''
 }
 
-const navVisible = computed(() => scrolled.value || mobileMenuOpen.value || route.path !== '/')
+const navVisible = computed(() => {
+  if (isMobile.value) return true
+  return scrolled.value || mobileMenuOpen.value || route.path !== '/'
+})
 
 function updateHeroBounds() {
   const hero = document.getElementById('home-hero')
   const navEl = document.querySelector('nav')
   navHeight.value = navEl?.getBoundingClientRect().height || 80
+  isMobile.value = window.innerWidth < 1024
   if (hero) {
     const rect = hero.getBoundingClientRect()
     heroBottom.value = rect.bottom + window.scrollY
@@ -235,7 +239,6 @@ watch(() => route.path, () => {
 </script>
 
 <style scoped>
-
 .nav-link {
   position: relative;
   transition: color 0.3s ease;
@@ -247,7 +250,7 @@ watch(() => route.path, () => {
   bottom: -4px;
   left: 0;
   width: 0;
-  height:   px;
+  height: px;
   background-color: currentColor;
   transition: width 0.3s ease;
 }

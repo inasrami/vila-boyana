@@ -8,6 +8,16 @@
   --color-soft-neutral: #E6E4E0;
   --color-charcoal-text: #2B2B2B;
   --color-warm-beige:  #C8B8A7;
+   --primary: #1c1917; 
+  --secondary: #44403c; 
+  --muted: #78716c; 
+  --accent: #a89078; 
+  --accent-dark: #8a7560;
+  --accent-light: #e7e0d8;
+  --accent-light-10: rgba(168, 144, 120, 0.1);
+  --cream: #fafaf9; 
+  --white: #ffffff;
+  --border-color: #e7e5e4;
 }
 
 body, html {
@@ -15,4 +25,7 @@ body, html {
     padding: 0;
     width: 100%;
     height: 100%;
+}
+[data-aos] {
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }

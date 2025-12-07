@@ -54,26 +54,7 @@ const navLinks = [
           </ul>
         </div>
 
-        <div>
-          <h4 class="text-lg font-serif text-warm-beige mb-6 font-bold uppercase">намери ни</h4>
-          
-          <div class="bg-soft-neutral/10 p-4 rounded mb-6 border border-wood-brown">
-            <p class="text-xs text-warm-beige uppercase tracking-wider mb-2 font-bold">GPS Coordinates</p>
-            <p class="font-mono text-lg text-white">42.646691, 23.267074</p>
-            <a href="#" class="text-xs text-moss-green underline mt-2 inline-block hover:text-white transition-colors">
-              Open in Google Maps →
-            </a>
-          </div>
-
-          <div class="flex space-x-4">
-            <a href="#" class="w-10 h-10 rounded-full bg-wood-brown flex items-center justify-center hover:bg-forest-green text-warm-cream transition-all duration-300 shadow-md">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg>
-            </a>
-            <a href="#" class="w-10 h-10 rounded-full bg-wood-brown flex items-center justify-center hover:bg-forest-green text-warm-cream transition-all duration-300 shadow-md">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.5 6.5h.01"></path><rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke-width="2"></rect></svg>
-            </a>
-          </div>
-        </div>
+        
 
       </div>
 
