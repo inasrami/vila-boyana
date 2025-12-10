@@ -1,11 +1,12 @@
 <script setup>
     import hero from '../components/hero.vue';
     import rooms from '../components/rooms.vue';
+    import ServicesPreview from '../components/ServicesPreview.vue'; 
     import location from '../components/location.vue';
 </script>
-<template>
 
+<template>
     <hero></hero>
     <rooms></rooms>
-    <location></location>
+    <ServicesPreview></ServicesPreview> <location></location>
 </template>

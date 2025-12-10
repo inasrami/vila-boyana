@@ -152,11 +152,10 @@ const mainLinks = [
 const hotelLinks = [
   { name: 'За Нас', path: '/about' },
   { name: 'Услуги', path: '/services' },
-  { name: 'СПА & Уелнес', path: '/spa' },
-  { name: 'Ресторант', path: '/restaurant' },
+  { name: 'Събития', path: '/meetings' },
+  { name: 'Финландска сауна', path: '/sauna' },
+  { name: 'Обяд и Вечеря', path: '/dining' },
   { name: 'Свободно Време', path: '/events' },
-  { name: 'Актуално', path: '/news' },
-  { name: 'Транспорт', path: '/transport' },
 ]
 
 const navClasses = computed(() => {

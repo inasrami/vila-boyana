@@ -1,37 +1,57 @@
 <template>
-  <div id="home-hero" class="relative min-h-screen w-full flex items-center justify-center bg-cover bg-center bg-fixed"
-    style="background-image: url('/src/assets/hero-image.jpg');">
+  <div id="home-hero" class="relative h-screen w-full flex items-center overflow-hidden">
     
-    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/70"></div>
+    <div class="absolute inset-0 w-full h-full">
+      <div class="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed transform scale-105"
+           style="background-image: url('/src/assets/hero-image.jpg');">
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-r from-[#1c1917]/95 via-[#1c1917]/60 to-transparent"></div>
+    </div>
 
-    <div class="relative z-10 text-center px-6 max-w-4xl mx-auto mt-20">
-      <div data-aos="fade-up" data-aos-duration="1200">
-        <p class="text-accent text-gray-200 text-sm md:text-base font-bold uppercase tracking-[0.3em] mb-6">
-          Добре дошли в София
-        </p>
-        <h1 class="text-white text-4xl md:text-6xl lg:text-7xl font-serif font-medium mb-8 leading-tight drop-shadow-lg">
-          Лукс и уют във <br/> <span class="italic text-warm-beige">Вила Бояна</span>
+    <div class="relative z-10 container mx-auto px-6 md:px-12 lg:px-20 h-full flex flex-col justify-center">
+      <div data-aos="fade-right" data-aos-duration="1200" class="max-w-3xl">
+        
+        <div class="flex items-center gap-4 mb-6">
+           <span class="h-[2px] w-12 bg-accent"></span>
+           <p class="text-accent text-sm md:text-base font-bold uppercase tracking-[0.25em]">
+             Добре дошли в София
+           </p>
+        </div>
+
+        <h1 class="text-white text-5xl md:text-7xl lg:text-8xl font-serif font-medium mb-8 leading-[1.1] drop-shadow-lg">
+          Лукс и уют във <br/>
+          <span class="text-warm-beige italic pr-4">
+            Вила Бояна
+          </span>
         </h1>
-        <p class="text-gray-200 text-lg md:text-xl font-light mb-12 max-w-2xl mx-auto leading-relaxed">
+
+        <p class="text-gray-300 text-lg md:text-xl font-light mb-12 max-w-xl leading-relaxed border-l-2 border-white/10 pl-6">
           Вашето място за спокойствие, далеч от градския шум.
         </p>
 
-        <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+        <div class="flex flex-col sm:flex-row gap-5">
           <button @click="goToBooking"
-            class="px-10 py-4 bg-white text-primary min-w-[200px] uppercase tracking-widest text-xs font-bold hover:bg-accent hover:text-white transition-all duration-300 shadow-xl">
-            Резервирай Сега
+            class="group relative px-10 py-4 bg-accent text-white min-w-[200px] overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-accent/20">
+            <span class="relative z-10 text-xs font-bold uppercase tracking-widest">Резервирай Сега</span>
+            <div class="absolute inset-0 h-full w-full bg-[#8a7560] translate-y-full transition-transform duration-300 group-hover:translate-y-0"></div>
           </button>
+          
           <button @click="scrollToRooms"
-            class="px-10 py-4 bg-transparent border border-white text-white min-w-[200px] uppercase tracking-widest text-xs font-bold hover:bg-white hover:text-primary transition-all duration-300">
-            Разгледай Стаите
+            class="group px-10 py-4 border border-white/30 text-white min-w-[200px] hover:bg-white hover:text-primary transition-all duration-300 backdrop-blur-sm">
+             <span class="text-xs font-bold uppercase tracking-widest">Разгледай Стаите</span>
           </button>
         </div>
+
       </div>
     </div>
 
-    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white animate-bounce cursor-pointer opacity-80" @click="scrollToRooms">
-      <span class="material-symbols-outlined text-4xl">keyboard_arrow_down</span>
+    <div class="absolute bottom-0 left-0 p-8 md:p-12 hidden md:block">
+       <div class="flex flex-col items-center gap-4 text-white/40 cursor-pointer hover:text-accent transition-colors duration-300" @click="scrollToRooms">
+          <span class="text-[10px] uppercase tracking-[0.3em] [writing-mode:vertical-rl] rotate-180">Скрол</span>
+          <span class="h-16 w-[1px] bg-current"></span>
+       </div>
     </div>
+
   </div>
 </template>
 
