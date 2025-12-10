@@ -42,7 +42,7 @@
             enter-to-class="opacity-100" leave-active-class="transition duration-200 ease-in"
             leave-from-class="opacity-100" leave-to-class="opacity-0">
             <div v-if="lightboxOpen"
-                class="fixed inset-0 z-[60] bg-black/95 backdrop-blur-sm flex items-center justify-center"
+                class="fixed inset-0 z-60 bg-black/95 backdrop-blur-sm flex items-center justify-center"
                 @click.self="closeLightbox">
 
                 <button @click="closeLightbox"

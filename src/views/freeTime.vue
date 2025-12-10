@@ -24,7 +24,7 @@
           @click="activeTab = 'winter'"
           :class="[
             'px-8 py-3 rounded-full text-xs font-bold uppercase tracking-widest transition-all duration-300 shadow-sm flex items-center gap-2',
-            activeTab === 'winter' ? 'bg-[#2E6F40] text-white shadow-md scale-105' : 'bg-white text-gray-500 hover:text-[#2E6F40] hover:bg-white/80'
+            activeTab === 'winter' ? 'bg-forest-green text-white shadow-md scale-105' : 'bg-white text-gray-500 hover:text-forest-green hover:bg-white/80'
           ]"
         >
           <span class="material-symbols-outlined text-lg">ac_unit</span> Зима
@@ -86,9 +86,9 @@
           
           <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
             <div class="order-2 lg:order-1 h-[400px] rounded-sm overflow-hidden shadow-xl relative group">
-               <img src="/src/assets/ski.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 grayscale-[30%]" alt="Зима на Витоша" />
+               <img src="/src/assets/ski.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 grayscale-30" alt="Зима на Витоша" />
                <div class="absolute inset-0 bg-blue-900/10"></div> <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur px-4 py-2 rounded-sm shadow-md">
-                 <span class="text-xs font-bold text-[#2E6F40] uppercase flex items-center gap-2"><span class="material-symbols-outlined">downhill_skiing</span> Ски зона</span>
+                 <span class="text-xs font-bold text-forest-green uppercase flex items-center gap-2"><span class="material-symbols-outlined">downhill_skiing</span> Ски зона</span>
                </div>
             </div>
             
@@ -98,7 +98,7 @@
                  Безспорно едни от най-добрите условия за практикуване на зимни спортове са тук.
                  Само на 16 км от хотел "Вила Бояна" се намират ски пистите на Витоша.
                </p>
-               <div class="bg-white p-6 border-l-4 border-[#2E6F40] shadow-sm">
+               <div class="bg-white p-6 border-l-4 border-forest-green shadow-sm">
                  <h4 class="font-serif text-lg text-primary mb-2">Активен Отдих</h4>
                  <p class="text-sm">
                    Ски бягане, екстремно спускане с маунтийн байк или разходка до замръзналия <strong>Боянски водопад</strong>. Курортът Боровец е само на 1 час път.
@@ -108,8 +108,8 @@
           </div>
 
           <div class="grid md:grid-cols-2 gap-8">
-             <div class="bg-white p-8 flex items-start gap-6 shadow-md border-b-4 border-[#2E6F40]">
-                <span class="material-symbols-outlined text-5xl text-[#2E6F40]">museum</span>
+             <div class="bg-white p-8 flex items-start gap-6 shadow-md border-b-4 border-forest-green">
+                <span class="material-symbols-outlined text-5xl text-forest-green">museum</span>
                 <div>
                   <h3 class="font-serif text-xl text-primary mb-2">Културен Туризъм</h3>
                   <p class="text-sm text-gray-500">

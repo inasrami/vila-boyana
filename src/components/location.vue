@@ -1,37 +1,37 @@
 <template>
-  <section class="relative min-h-[750px] flex items-center py-20 lg:py-0 overflow-hidden border-t-4 border-accent">
+  <section class="relative flex flex-col lg:block lg:min-h-[750px] border-t-4 border-accent">
     
-    <div class="absolute inset-0 w-full h-full z-0">
+    <div class="relative w-full h-[400px] lg:absolute lg:inset-0 lg:h-full z-0 order-2 lg:order-0">
        <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001.2345678901234!2d23.2640211!3d42.6466466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa84a0c11ede7b%3A0x3337c3d77d0afeca!2sHotel%20Villa%20Boyana!5e0!3m2!1sen!2sbg!4v1234567890123"
           width="100%"
           height="100%"
-          style="border: 0; filter: grayscale(50%) contrast(85%) brightness(70%);"
+          style="border: 0; filter: grayscale(30%) contrast(85%) brightness(90%);"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           class="w-full h-full object-cover"
         ></iframe>
        
-       <div class="absolute inset-0 bg-gradient-to-r from-[#1c1917]/95 via-[#1c1917]/70 to-transparent pointer-events-none"></div>
+       <div class="hidden lg:block absolute inset-0 bg-linear-to-r from-primary/95 via-primary/70 to-transparent pointer-events-none"></div>
     </div>
 
-    <div class="container-custom px-6 relative z-10 w-full h-full pointer-events-none">
-      <div class="grid lg:grid-cols-2 h-full items-center">
+    <div class="relative z-10 w-full lg:h-full lg:pointer-events-none order-1 lg:order-0 bg-primary lg:bg-transparent">
+      <div class="container-custom px-0 lg:px-6 h-full flex items-center">
         
-        <div class="bg-[#1c1917] text-white p-10 md:p-14 shadow-2xl border-l-4 border-accent max-w-xl pointer-events-auto" data-aos="fade-up">
+        <div class="bg-primary text-white p-8 md:p-14 shadow-none lg:shadow-2xl lg:border-l-4 border-accent w-full lg:max-w-xl pointer-events-auto" data-aos="fade-up">
            
            <div class="flex items-center gap-4 mb-8">
               <span class="h-px w-12 bg-accent"></span>
               <span class="text-accent text-xs font-bold uppercase tracking-[0.2em]">Локация</span>
            </div>
 
-           <h2 class="font-serif text-4xl md:text-5xl mb-8 leading-tight text-white">
+           <h2 class="font-serif text-3xl md:text-5xl mb-6 lg:mb-8 leading-tight text-white">
              В сърцето на <br/>
              <span class="italic text-accent">Квартал Бояна</span>
            </h2>
 
-           <p class="text-stone-300 mb-10 leading-relaxed font-light text-sm md:text-base">
+           <p class="text-stone-300 mb-8 lg:mb-10 leading-relaxed font-light text-sm md:text-base">
              Разположен в престижния квартал Бояна, хотелът съчетава тишината на планината с близостта до динамичния град. Перфектната отправна точка за вашите бизнес срещи или планински разходки.
            </p>
 

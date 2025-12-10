@@ -55,7 +55,7 @@
                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               
-              <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-60"></div>
+              <div class="absolute inset-0 bg-linear-to-t from-black/40 to-transparent opacity-60"></div>
             </div>
           </div>
         </div>

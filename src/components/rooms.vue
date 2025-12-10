@@ -19,7 +19,7 @@
                      class="group bg-white shadow-sm hover:shadow-xl transition-all duration-500 ease-out flex flex-col h-full" 
                      data-aos="fade-up" :data-aos-delay="index * 100">
                     
-                    <div class="relative overflow-hidden aspect-[4/3] xl:aspect-[3/4]">
+                    <div class="relative overflow-hidden aspect-4/3 xl:aspect-3/4">
                         <img :src="room.image" :alt="room.title"
                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                         <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-500"></div>
@@ -30,10 +30,10 @@
                         </div>
                     </div>
 
-                    <div class="p-6 flex flex-col flex-grow">
+                    <div class="p-6 flex flex-col grow">
                         <h3 class="text-xl font-serif text-primary mb-3 group-hover:text-wood-brown transition-colors">{{ room.title }}</h3>
                         
-                        <p class="text-gray-500 mb-6 text-sm leading-relaxed line-clamp-3 flex-grow">
+                        <p class="text-gray-500 mb-6 text-sm leading-relaxed line-clamp-3 grow">
                             {{ room.description }}
                         </p>
 

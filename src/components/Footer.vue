@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-[#1c1917] text-stone-300 pt-20 pb-10 font-sans border-t-4 border-accent">
+  <footer class="bg-primary text-stone-300 pt-20 pb-10 font-sans border-t-4 border-accent">
     <div class="container mx-auto px-6">
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-16 mb-16">

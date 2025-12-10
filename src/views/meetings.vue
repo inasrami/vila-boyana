@@ -57,7 +57,7 @@
 
         <div class="relative h-[500px] group overflow-hidden rounded-sm shadow-xl" data-aos="fade-left">
            <img src="/src/assets/celebration.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Тържества" />
-           <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+           <div class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent"></div>
            <div class="absolute bottom-6 left-6 text-white">
               <p class="font-serif text-2xl">Незабравими мигове</p>
            </div>
@@ -76,10 +76,10 @@
 
         <div class="order-1 lg:order-2" data-aos="fade-left">
           <div class="flex items-center gap-4 mb-6">
-             <div class="w-12 h-12 rounded-full bg-white border border-[#2E6F40] flex items-center justify-center text-[#2E6F40] shadow-sm">
+             <div class="w-12 h-12 rounded-full bg-white border border-forest-green flex items-center justify-center text-forest-green shadow-sm">
                 <span class="material-symbols-outlined text-2xl">groups</span>
              </div>
-             <span class="text-[#2E6F40] text-xs font-bold uppercase tracking-[0.2em]">Бизнес</span>
+             <span class="text-forest-green text-xs font-bold uppercase tracking-[0.2em]">Бизнес</span>
           </div>
 
           <h2 class="font-serif text-3xl md:text-4xl text-primary mb-8 leading-tight">

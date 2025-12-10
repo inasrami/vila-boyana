@@ -6,7 +6,7 @@
     <div class="container-custom px-6">
       <div class="flex items-center justify-between h-20 md:h-24">
 
-        <router-link to="/" class="flex-shrink-0 relative z-50 group flex items-center gap-4">
+        <router-link to="/" class="shrink-0 relative z-50 group flex items-center gap-4">
           <img 
             src="/src/assets/logo.png" 
             alt="Villa Boyana" 
@@ -45,7 +45,7 @@
                 leave-from-class="opacity-100 translate-y-0"
                 leave-to-class="opacity-0 translate-y-2"
               >
-                <div v-if="activeDropdown === 'hotel'" class="absolute top-full -left-4 pt-4 min-w-[240px]">
+                <div v-if="activeDropdown === 'hotel'" class="absolute top-full -left-4 pt-4 min-w-60">
                   <div class="bg-white rounded-sm shadow-xl border-t-2 border-accent py-2 flex flex-col">
                     <router-link 
                       v-for="sub in hotelLinks" 
@@ -96,7 +96,7 @@
     leave-from-class="opacity-100 translate-x-0"
     leave-to-class="opacity-0 translate-x-full"
   >
-    <div v-if="mobileMenuOpen" class="fixed inset-0 bg-[#1c1917]/95 backdrop-blur-md z-40 flex flex-col justify-center items-center overflow-y-auto">
+    <div v-if="mobileMenuOpen" class="fixed inset-0 bg-primary/95 backdrop-blur-md z-40 flex flex-col justify-center items-center overflow-y-auto">
       <button @click="toggleMobileMenu" class="absolute top-6 right-6 text-white hover:text-accent transition-colors p-2">
         <span class="material-symbols-outlined text-4xl">close</span>
       </button>

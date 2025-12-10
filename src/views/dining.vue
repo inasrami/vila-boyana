@@ -9,7 +9,7 @@
            class="w-full h-auto object-cover md:min-h-[400px] lg:min-h-[500px] transition-transform duration-1000 group-hover:scale-105"
          />
          
-         <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+         <div class="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent"></div>
 
          <div class="absolute bottom-6 left-6 md:bottom-10 md:left-10 text-white">
             <span class="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] mb-2 text-accent">

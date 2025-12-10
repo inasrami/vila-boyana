@@ -34,7 +34,7 @@
            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
                style="background-image: url('/src/assets/sauna.jpg');"></div> 
           
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+          <div class="absolute inset-0 bg-linear-to-t from-black/80 to-transparent"></div>
 
           <div class="absolute inset-0 p-10 flex flex-col justify-end text-white">
             <h3 class="font-serif text-3xl mb-3">Финландска Сауна</h3>
