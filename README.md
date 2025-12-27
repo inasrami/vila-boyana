@@ -1,85 +1,82 @@
-Vila Boyana
-Vila Boyana is a modern, responsive web application developed for the Vila Boyana hotel. This project showcases the hotel's amenities, accommodations, and services through a clean and interactive user interface.
+# Vila Boyana 🌲
 
-⚠️ DISCLAIMER: Voluntary Project
+<div align="center">
+  <p><i>A modern digital experience for Hotel Vila Boyana.</i></p>
+  <br />
+</div>
 
-This project was built voluntarily for the existing Hotel Vila Boyana.
+> **⚠️ DISCLAIMER: Voluntary Project**
+>
+> This project was built **voluntarily** for the existing Hotel Vila Boyana.
+> * **Ownership:** The hotel retains all rights to the brand, content, and intellectual property associated with "Vila Boyana".
+> * **Status:** This repository serves strictly as a portfolio piece. I will immediately delete this repository and take down any live demos upon request from the hotel management.
 
-Ownership: The hotel retains all rights to the brand, content, and intellectual property associated with "Vila Boyana".
+---
 
-Takedown Policy: This repository serves as a portfolio piece. I will immediately delete this repository and take down any live demos upon request from the hotel management.
+## ✦ About The Project
 
-✦ About The Project
-This website serves as a digital brochure for the hotel, offering potential guests a detailed look at the facilities and surrounding activities. It is built to be fast, responsive, and visually engaging.
+**Vila Boyana** is a responsive web application designed to showcase the amenities, accommodations, and services of the Vila Boyana hotel. The site serves as a digital brochure, offering potential guests a detailed and interactive look at the facilities and surrounding activities.
 
-Key Pages
+### 🏨 Key Experiences
+* **Accommodation:** Detailed previews of Single, Double, and Suite rooms.
+* **Dining:** A visual showcase of the restaurant's culinary offerings.
+* **Wellness:** Dedicated sections for the Sauna and relaxation facilities.
+* **Events:** Information on conference facilities and private event hosting.
+* **Gallery:** A curated visual collection of the hotel's atmosphere.
 
-Home: Overview of the hotel with hero imagery and key highlights.
+## 🛠 Tech Stack
 
-Accommodation: detailed views of room types (Single, Double, Suites).
+Built with performance and modern styling in mind.
 
-Dining: Showcase of the restaurant and culinary options.
+![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![AOS](https://img.shields.io/badge/AOS-Animation-blue?style=for-the-badge)
 
-Relax & Wellness: Dedicated sections for the Sauna and wellness facilities.
+* **Framework:** [Vue 3](https://vuejs.org/)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Routing:** [Vue Router](https://router.vuejs.org/)
+* **Animations:** [AOS](https://github.com/michalsnik/aos) (Animate On Scroll)
 
-Events & Meetings: Information on conference facilities and special event hosting.
+## ✨ Features
 
-Gallery: A visual collection of the hotel's atmosphere.
+* **Smooth Navigation:** Client-side routing with smooth scrolling behavior for a seamless user experience.
+* **Interactive UI:** Scroll-triggered entrance animations that bring content to life as you explore.
+* **Responsive Design:** Fully adaptive layout optimized for mobile, tablet, and desktop devices.
+* **Service Previews:** Dedicated components highlighting key services like skiing, transport, and leisure.
 
-🛠 Tech Stack
-The project utilizes a modern Vue 3 ecosystem, optimized for performance and ease of styling.
+## 🚀 Getting Started
 
-Framework: Vue 3
+Follow these steps to set up the project locally.
 
-Build Tool: Vite
+### Prerequisites
+* npm or yarn
 
-Styling: Tailwind CSS
+### Installation
 
-Routing: Vue Router
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/inasrami/vila-boyana.git](https://github.com/inasrami/vila-boyana.git)
+    cd vila-boyana
+    ```
 
-Animations: AOS (Animate On Scroll) for scroll-triggered entrance animations.
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
 
-✨ Features
-Smooth Navigation: Client-side routing with smooth scrolling behavior for anchor links.
+3.  **Run the development server**
+    ```bash
+    npm run dev
+    ```
+    The site will be available at `http://localhost:5173`.
 
-Interactive UI: Scroll-triggered animations using AOS to bring content to life as the user explores.
+### Build for Production
 
-Responsive Design: Fully adaptive layout for mobile, tablet, and desktop devices using Tailwind CSS.
-
-Service Previews: Dedicated components to highlight hotel services like skiing, transport, and leisure.
-
-Getting Started
-Follow these steps to run the project locally.
-
-Prerequisites
-
-Node.js (v16.0.0 or higher)
-
-npm or yarn
-
-Installation
-
-Clone the repository
-
-Bash
-git clone https://github.com/inasrami/vila-boyana.git
-cd vila-boyana
-Install dependencies
-
-Bash
-npm install
-Run the development server
-
-Bash
-npm run dev
-The site should now be running at http://localhost:5173.
-
-Building for Production
-
-To build the project for deployment:
-
-Bash
+```bash
 npm run build
+
+
 👤 Author
 Inas Rami
 
