@@ -1,6 +1,6 @@
 @import "tailwindcss";
-
-@theme {
+/* custom css variables */
+@theme{
 
   --color-forest-green: #2E6F40;
   --color-moss-green:  #556B2F;
