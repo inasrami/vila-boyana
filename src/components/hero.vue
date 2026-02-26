@@ -3,7 +3,7 @@
     
     <div class="absolute inset-0 w-full h-full">
       <div class="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed transform scale-105"
-           style="background-image: url('/src/assets/hero-image.jpg');">
+           :style="{ backgroundImage: `url(${heroBgImage})` }">
       </div>
       <div class="absolute inset-0 bg-linear-to-r from-primary/95 via-primary/60 to-transparent"></div>
     </div>
@@ -56,6 +56,8 @@
 </template>
 
 <script setup>
+import heroBgImage from '../assets/hero-image.jpg'
+
 function scrollToRooms() {
   document.getElementById('rooms')?.scrollIntoView({ behavior: 'smooth' })
 }
