@@ -68,7 +68,7 @@ const rooms = ref([
     {
         title: 'Единична стая',
         description: 'Стилен уют и модерни удобства. Идеална за бизнес престой, с балкон разкриващ гледка към Витоша.',
-        image: '/src/assets/edinichna.jpg', //
+        image: new URL('../assets/edinichna.jpg', import.meta.url).href,
         amenities: [
             { name: 'View', icon: 'landscape' },
             { name: 'Wifi', icon: 'wifi' },
@@ -78,7 +78,7 @@ const rooms = ref([
     {
         title: 'Двойна стая',
         description: 'Перфектният избор за романтично уединение. Елегантен интериор и отлична шумоизолация.',
-        image: '/src/assets/dvoyna.jpg', 
+        image: new URL('../assets/dvoyna.jpg', import.meta.url).href, 
         amenities: [
             { name: 'Bed', icon: 'king_bed' },
             { name: 'Garden', icon: 'deck' },
@@ -88,7 +88,7 @@ const rooms = ref([
     {
         title: 'Стая с две легла', 
         description: 'Просторни стаи с отделни легла, подходящи за приятели или колеги. Разполагат с всички удобства и панорамна тераса.',
-        image: '/src/assets/suite2.jpg', 
+        image: new URL('../assets/suite2.jpg', import.meta.url).href, 
         amenities: [
             { name: 'Twin Beds', icon: 'single_bed' },
             { name: 'Balcony', icon: 'balcony' },
@@ -98,7 +98,7 @@ const rooms = ref([
     {
         title: 'Суит',
         description: 'Пространство и лукс. Суитът предлага отделни зони, мека мебел и всичко необходимо за дълъг и комфортен престой.',
-        image: '/src/assets/suite1.jpg', 
+        image: new URL('../assets/suite1.jpg', import.meta.url).href, 
         amenities: [
             { name: 'Living Area', icon: 'weekend' },
             { name: 'Minibar', icon: 'wine_bar' },
