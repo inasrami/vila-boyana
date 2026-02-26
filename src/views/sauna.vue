@@ -49,7 +49,7 @@
            <div class="relative h-full w-full overflow-hidden rounded-sm shadow-xl group z-10 bg-white p-2">
              <div class="w-full h-full overflow-hidden relative">
                <img 
-                 src="/src/assets/sauna2.jpg" 
+                 src="/vila-boyana/images/sauna2.jpg" 
                  alt="Финландска сауна" 
                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                />

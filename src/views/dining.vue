@@ -4,7 +4,7 @@
       
       <div class="relative w-full h-auto mb-16 shadow-xl rounded-sm overflow-hidden group" data-aos="fade-down">
          <img 
-           src="/src/assets/dining.jpg" 
+           src="/vila-boyana/images/dining.jpg" 
            alt="Обяд и вечеря" 
            class="w-full h-auto object-cover md:min-h-[400px] lg:min-h-[500px] transition-transform duration-1000 group-hover:scale-105"
          />

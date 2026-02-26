@@ -50,7 +50,7 @@
                </div>
             </div>
             <div class="h-[400px] rounded-sm overflow-hidden shadow-xl relative group">
-               <img src="/src/assets/ezero.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Лято на Витоша" />
+               <img src="/vila-boyana/images/ezero.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Лято на Витоша" />
                <div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-4 py-2 rounded-sm shadow-md">
                  <span class="text-xs font-bold text-accent uppercase flex items-center gap-2"><span class="material-symbols-outlined">landscape</span> Витоша</span>
                </div>
@@ -62,7 +62,7 @@
                <span class="material-symbols-outlined text-4xl text-accent mb-4">church</span>
                <h3 class="font-serif text-xl text-primary mb-3">Култура и История</h3>
                <p class="text-sm text-gray-500 mb-4">
-                 Световно известната <strong>Боянска църква</strong> (ЮНЕСКО) със стенописи от 1259г. и <strong>Националния Исторически Музей</strong> са само на минути от хотела.
+                 Световно известната <strong>Боянската църква</strong> (ЮНЕСКО) със стенописи от 1259г. и <strong>Националния Исторически Музей</strong> са само на минути от хотела.
                </p>
             </div>
             <div class="bg-white p-6 shadow-sm hover:shadow-xl transition-all duration-300 border-t-2 border-accent/20">
@@ -86,7 +86,7 @@
           
           <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
             <div class="order-2 lg:order-1 h-[400px] rounded-sm overflow-hidden shadow-xl relative group">
-               <img src="/src/assets/ski.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 grayscale-30" alt="Зима на Витоша" />
+               <img src="/vila-boyana/images/ski.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 grayscale-30" alt="Зима на Витоша" />
                <div class="absolute inset-0 bg-blue-900/10"></div> <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur px-4 py-2 rounded-sm shadow-md">
                  <span class="text-xs font-bold text-forest-green uppercase flex items-center gap-2"><span class="material-symbols-outlined">downhill_skiing</span> Ски зона</span>
                </div>

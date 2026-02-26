@@ -50,7 +50,7 @@
             <div class="w-full h-full bg-gray-200 relative overflow-hidden">
               
               <img 
-                src="/src/assets/hotel6.jpg" 
+                src="/vila-boyana/images/hotel6.jpg" 
                 alt="За Хотел Вила Бояна" 
                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
