@@ -79,47 +79,39 @@
 <script setup>
 import { ref, computed } from 'vue'
 
-// 1. Import all room images directly
-import staq1 from '../assets/staq1.jpg'
-import staq2 from '../assets/staq2.jpg'
-import staq3 from '../assets/staq3.jpg'
-import staq4 from '../assets/staq4.jpg'
-import staq5 from '../assets/staq5.jpg'
-import staq6 from '../assets/staq6.jpg'
-import staq7 from '../assets/staq7.jpg'
-import staq8 from '../assets/staq8.jpg'
-import staq9 from '../assets/staq9.jpg'
-import staq10 from '../assets/staq10.jpg'
-
-// 2. Import all hotel images directly
-import hotel1 from '../assets/hotel1.jpg'
-import hotel2 from '../assets/hotel2.jpg'
-import hotel3 from '../assets/hotel3.jpg'
-import hotel4 from '../assets/hotel4.jpg'
-import hotel5 from '../assets/hotel5.jpg'
-import hotel6 from '../assets/hotel6.jpg'
-import hotel7 from '../assets/hotel7.jpg'
-import hotel8 from '../assets/hotel8.jpg'
-import hotel9 from '../assets/hotel9.jpg'
-import hotel10 from '../assets/hotel10.jpg'
-import hotel11 from '../assets/hotel11.jpg'
-import hotel12 from '../assets/hotel12.jpg'
-import hotel13 from '../assets/hotel13.jpg'
-import hotel14 from '../assets/hotel14.jpg'
-import hotel15 from '../assets/hotel15.jpg'
-
-
 const activeTab = ref('rooms')
 const lightboxOpen = ref(false)
 const currentIndex = ref(0)
 
-// 3. Assign the imported variables to the arrays
 const roomImages = [
-    staq1, staq2, staq3, staq4, staq5, staq6, staq7, staq8, staq9, staq10
+    '/vila-boyana/images/staq1.jpg',
+    '/vila-boyana/images/staq2.jpg',
+    '/vila-boyana/images/staq3.jpg',
+    '/vila-boyana/images/staq4.jpg',
+    '/vila-boyana/images/staq5.jpg',
+    '/vila-boyana/images/staq6.jpg',
+    '/vila-boyana/images/staq7.jpg',
+    '/vila-boyana/images/staq8.jpg',
+    '/vila-boyana/images/staq9.jpg',
+    '/vila-boyana/images/staq10.jpg',
 ]
 
 const hotelImages = [
-    hotel1, hotel2, hotel3, hotel4, hotel5, hotel6, hotel7, hotel8, hotel9, hotel10, hotel11, hotel12, hotel13, hotel14, hotel15
+    '/vila-boyana/images/hotel1.jpg',
+    '/vila-boyana/images/hotel2.jpg',
+    '/vila-boyana/images/hotel3.jpg',
+    '/vila-boyana/images/hotel4.jpg',
+    '/vila-boyana/images/hotel5.jpg',
+    '/vila-boyana/images/hotel6.jpg',
+    '/vila-boyana/images/hotel7.jpg',
+    '/vila-boyana/images/hotel8.jpg',
+    '/vila-boyana/images/hotel9.jpg',
+    '/vila-boyana/images/hotel10.jpg',
+    '/vila-boyana/images/hotel11.jpg',
+    '/vila-boyana/images/hotel12.jpg',
+    '/vila-boyana/images/hotel13.jpg',
+    '/vila-boyana/images/hotel14.jpg',
+    '/vila-boyana/images/hotel15.jpg',
 ]
 
 const currentImages = computed(() => {

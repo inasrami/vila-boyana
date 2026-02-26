@@ -60,12 +60,6 @@
 <script setup>
 import { ref } from 'vue'
 
-// 1. Explicitly import all room images here
-import edinichnaImg from '../assets/edinichna.jpg'
-import dvoynaImg from '../assets/dvoyna.jpg'
-import suite2Img from '../assets/suite2.jpg'
-import suite1Img from '../assets/suite1.jpg'
-
 function goToBooking() {
     window.open('https://www.booking.com/hotel/bg/hotel-villa-boyana.en-gb.html', '_blank');
 }
@@ -74,8 +68,7 @@ const rooms = ref([
     {
         title: 'Единична стая',
         description: 'Стилен уют и модерни удобства. Идеална за бизнес престой, с балкон разкриващ гледка към Витоша.',
-        // 2. Use the imported variables
-        image: edinichnaImg,
+        image: '/vila-boyana/images/edinichna.jpg',
         amenities: [
             { name: 'View', icon: 'landscape' },
             { name: 'Wifi', icon: 'wifi' },
@@ -85,7 +78,7 @@ const rooms = ref([
     {
         title: 'Двойна стая',
         description: 'Перфектният избор за романтично уединение. Елегантен интериор и отлична шумоизолация.',
-        image: dvoynaImg, 
+        image: '/vila-boyana/images/dvoyna.jpg', 
         amenities: [
             { name: 'Bed', icon: 'king_bed' },
             { name: 'Garden', icon: 'deck' },
@@ -95,7 +88,7 @@ const rooms = ref([
     {
         title: 'Стая с две легла', 
         description: 'Просторни стаи с отделни легла, подходящи за приятели или колеги. Разполагат с всички удобства и панорамна тераса.',
-        image: suite2Img, 
+        image: '/vila-boyana/images/suite2.jpg', 
         amenities: [
             { name: 'Twin Beds', icon: 'single_bed' },
             { name: 'Balcony', icon: 'balcony' },
@@ -105,7 +98,7 @@ const rooms = ref([
     {
         title: 'Суит',
         description: 'Пространство и лукс. Суитът предлага отделни зони, мека мебел и всичко необходимо за дълъг и комфортен престой.',
-        image: suite1Img, 
+        image: '/vila-boyana/images/suite1.jpg', 
         amenities: [
             { name: 'Living Area', icon: 'weekend' },
             { name: 'Minibar', icon: 'wine_bar' },
