@@ -16,7 +16,7 @@
         
         <div class="relative group h-[400px] overflow-hidden" data-aos="fade-right">
           <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-               style="background-image: url('/vila-boyana/images/dining.jpg');"></div> 
+               style="background-image: url('/images/dining.jpg');"></div> 
           <div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors"></div>
 
           <div class="absolute inset-0 p-10 flex flex-col justify-end text-white">
@@ -32,7 +32,7 @@
 
         <div class="relative group h-[400px] overflow-hidden" data-aos="fade-left">
            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-               style="background-image: url('/vila-boyana/images/sauna.jpg');"></div> 
+               style="background-image: url('/images/sauna.jpg');"></div> 
           
           <div class="absolute inset-0 bg-linear-to-t from-black/80 to-transparent"></div>
 
@@ -63,7 +63,6 @@
 </template>
 
 <script setup>
-
 const services = [
   { name: '24/7 Рецепция', icon: 'concierge', delay: 0 },
   { name: 'Паркинг', icon: 'local_parking', delay: 100 },

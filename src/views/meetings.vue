@@ -2,7 +2,7 @@
   <div class="pt-24 min-h-screen bg-warm-cream">
     
     <div class="bg-primary text-white py-20 relative overflow-hidden">
-      <div class="absolute inset-0 opacity-20 bg-[url('/vila-boyana/images/hero-image.jpg')] bg-cover bg-center"></div>
+      <div class="absolute inset-0 opacity-20 bg-[url('/images/hero-image.jpg')] bg-cover bg-center"></div>
       <div class="container-custom px-6 relative z-10 text-center" data-aos="fade-up">
         <span class="text-accent text-xs font-bold uppercase tracking-[0.2em] mb-4 block">За вашия повод</span>
         <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl mb-6">Събития и Семинари</h1>
@@ -56,7 +56,7 @@
         </div>
 
         <div class="relative h-[500px] group overflow-hidden rounded-sm shadow-xl" data-aos="fade-left">
-           <img src="/vila-boyana/images/celebration.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Тържества" />
+           <img src="/images/celebration.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Тържества" />
            <div class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent"></div>
            <div class="absolute bottom-6 left-6 text-white">
               <p class="font-serif text-2xl">Незабравими мигове</p>
@@ -70,7 +70,7 @@
       <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         
         <div class="relative h-[500px] order-2 lg:order-1 group overflow-hidden rounded-sm shadow-xl" data-aos="fade-right">
-           <img src="/vila-boyana/images/suite2.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Семинари" />
+           <img src="/images/suite2.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Семинари" />
            <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
         </div>
 
