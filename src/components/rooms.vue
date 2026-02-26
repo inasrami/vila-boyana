@@ -60,6 +60,12 @@
 <script setup>
 import { ref } from 'vue'
 
+// 1. Explicitly import all room images here
+import edinichnaImg from '../assets/edinichna.jpg'
+import dvoynaImg from '../assets/dvoyna.jpg'
+import suite2Img from '../assets/suite2.jpg'
+import suite1Img from '../assets/suite1.jpg'
+
 function goToBooking() {
     window.open('https://www.booking.com/hotel/bg/hotel-villa-boyana.en-gb.html', '_blank');
 }
@@ -68,7 +74,8 @@ const rooms = ref([
     {
         title: 'Единична стая',
         description: 'Стилен уют и модерни удобства. Идеална за бизнес престой, с балкон разкриващ гледка към Витоша.',
-        image: new URL('../assets/edinichna.jpg', import.meta.url).href,
+        // 2. Use the imported variables
+        image: edinichnaImg,
         amenities: [
             { name: 'View', icon: 'landscape' },
             { name: 'Wifi', icon: 'wifi' },
@@ -78,7 +85,7 @@ const rooms = ref([
     {
         title: 'Двойна стая',
         description: 'Перфектният избор за романтично уединение. Елегантен интериор и отлична шумоизолация.',
-        image: new URL('../assets/dvoyna.jpg', import.meta.url).href, 
+        image: dvoynaImg, 
         amenities: [
             { name: 'Bed', icon: 'king_bed' },
             { name: 'Garden', icon: 'deck' },
@@ -88,7 +95,7 @@ const rooms = ref([
     {
         title: 'Стая с две легла', 
         description: 'Просторни стаи с отделни легла, подходящи за приятели или колеги. Разполагат с всички удобства и панорамна тераса.',
-        image: new URL('../assets/suite2.jpg', import.meta.url).href, 
+        image: suite2Img, 
         amenities: [
             { name: 'Twin Beds', icon: 'single_bed' },
             { name: 'Balcony', icon: 'balcony' },
@@ -98,7 +105,7 @@ const rooms = ref([
     {
         title: 'Суит',
         description: 'Пространство и лукс. Суитът предлага отделни зони, мека мебел и всичко необходимо за дълъг и комфортен престой.',
-        image: new URL('../assets/suite1.jpg', import.meta.url).href, 
+        image: suite1Img, 
         amenities: [
             { name: 'Living Area', icon: 'weekend' },
             { name: 'Minibar', icon: 'wine_bar' },
