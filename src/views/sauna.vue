@@ -49,7 +49,7 @@
            <div class="relative h-full w-full overflow-hidden rounded-sm shadow-xl group z-10 bg-white p-2">
              <div class="w-full h-full overflow-hidden relative">
                <img 
-                 src="/images/sauna2.jpg" 
+                 :src="base + 'images/sauna2.jpg'" 
                  alt="Финландска сауна" 
                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                />
@@ -64,6 +64,9 @@
 </template>
 
 <script setup>
+
+const base = import.meta.env.BASE_URL
+
 function goToBooking() {
   window.open('https://www.booking.com/hotel/bg/hotel-villa-boyana.en-gb.html', '_blank');
 }

@@ -62,7 +62,7 @@
           </div>
 
           <div class="relative h-[400px] lg:h-auto order-1 lg:order-2 overflow-hidden group">
-             <img src="/images/transport.jpg" alt="Транспортни услуги" 
+             <img :src="base + 'images/transport.jpg'" alt="Транспортни услуги" 
                   class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter brightness-90 group-hover:brightness-100" />
              
              <div class="absolute bottom-0 left-0 bg-white/90 backdrop-blur-sm px-6 py-3 m-6 rounded-sm shadow-lg">
@@ -96,6 +96,9 @@
 </template>
 
 <script setup>
+// BASE URL ADDED HERE
+const base = import.meta.env.BASE_URL
+
 function goToBooking() {
   window.open('https://www.booking.com/hotel/bg/hotel-villa-boyana.en-gb.html', '_blank');
 }
